@@ -1,4 +1,4 @@
-# Design Teardown
+# Building with Responsive Design
 
 ## [Collaborative Project]
 
