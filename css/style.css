@@ -283,3 +283,21 @@ html {
     width: 8.33333333%;
   }
 }
+
+/* * Top bar */
+.navbar {
+  background-color: #fff;
+  height: 80px;
+  padding-left: 0;
+  position: fixed;
+}
+
+.black-navbar {
+  background-color: #131313;
+  color: #555;
+  display: block;
+  line-height: 32px;
+  max-height: 32px;
+  position: relative;
+  z-index: 2;
+}
