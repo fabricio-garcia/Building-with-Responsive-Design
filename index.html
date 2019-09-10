@@ -8,6 +8,7 @@
     <title>Building with Responsive Design</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css" media="">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Play&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -42,95 +43,27 @@
                 <li><a href="https://thenextweb.homerun.co/" target="_blank">Jobs</a></li>
                 <li><a href="https://thenextweb.com/about/?contact">Contact</a></li>
             </ul>
-            <nav class="latest-bar" id="navid">
-                <ul class="mainnav" id="mainnavid" style="padding-left: 15px;">
+            <nav class="latest-bar">
+                <div class="TNW-logo">
+                    <img id="logo2img" alt="The Next Web" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg">
+                </div>
+                <ul class="latest-bar-ul">
                     <li><a href="https://thenextweb.com/latest/">LATEST</a></li>
                     <li><a href="https://thenextweb.com/hardfork/">HARD FORK</a></li>
                     <li><a href="https://thenextweb.com/plugged/">PLUGGED</a></li>
                     <li><a href="https://thenextweb.com/adobe-fundamentals/">FUNDAMENTALS</a></li>
                     <li><a href="https://thenextweb.com/work2030/">WORK 2030</a></li>
                 </ul>
+                <div class="search">
+                    <li><a href="#"><img src="https://img.icons8.com/windows/32/000000/search.png" class="search_logo"></a></li>
+                </div>
             </nav>
         </header>
-
-        <!-- <nav class="navbar">
-            <ul class="black-navbar">
-                <li><a class="is-active" href="/" data-event-category="Top" data-event-action="Navigation"
-                        data-event-label="News" data-event-non-interaction="true">News</a></li>
-                <li><a href="/conference/" target="_blank" data-event-category="Top" data-event-action="Navigation"
-                        data-event-label="Conference" data-event-non-interaction="true">Events ▾</a>
-                    <ul class="nav-tnw-dropdown-menu">
-                        <li>
-                            <a href="/hardfork-summit/">Hard Fork Summit</a>
-                        </li>
-                        <li>
-                            <a href="/conference/">TNW2020</a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="https://index.co/" target="_blank" data-event-category="Top" data-event-action="Navigation"
-                        data-event-label="Business" data-event-non-interaction="true">Business ▾</a>
-                    <ul class="nav-tnw-dropdown-menu">
-                        <li>
-                            <a href="https://index.co/">Index</a>
-                        </li>
-                        <li>
-                            <a href="/x/">TNW X</a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="https://answers.thenextweb.com/" target="_blank" rel="noopener" data-event-category="Top"
-                        data-event-action="Navigation" data-event-label="Answers"
-                        data-event-non-interaction="true">AMAs</a></li>
-                <li><a href="https://tq.co/" rel="noopener" target="_blank" data-event-category="Top"
-                        data-event-action="Navigation" data-event-label="TQ"
-                        data-event-non-interaction="true">Spaces</a></li>
-                <li><a href="/terms-and-conditions/" rel="noopener" target="_blank" data-event-category="Top"
-                        data-event-action="Navigation" data-event-label="Terms and Conditions"
-                        data-event-non-interaction="true">Terms &amp; Conditions</a></li>
-                <div class="nav-company">
-                    <li><a href="/about" data-event-category="Top" data-event-action="Navigation"
-                            data-event-label="About" data-event-non-interaction="true">About</a></li>
-                    <li><a href="/team" data-event-category="Top" data-event-action="Navigation" data-event-label="Team"
-                            data-event-non-interaction="true">Team</a></li>
-                    <li><a href="/advertise" data-event-category="Top" data-event-action="Navigation"
-                            data-event-label="Advertise" data-event-non-interaction="true">Advertise</a></li>
-                    <li><a href="https://thenextweb.homerun.co/" target="_blank" rel="noopener"
-                            data-event-category="Top" data-event-action="Navigation" data-event-label="Jobs"
-                            data-event-non-interaction="true">Jobs</a></li>
-                    <li><a href="/contact" data-event-category="Top" data-event-action="Navigation"
-                            data-event-label="Contact" data-event-non-interaction="true">Contact</a></li>
-                </div>
-            </ul>
-
-            <div class="white-navbar">
-                <ul class="nav-sections">
-                    <li class="nav-sections-section"><a href="/latest" data-event-category="Top"
-                            data-event-action="Channels" data-event-label="Latest"
-                            data-event-non-interaction="true">Latest</a></li>
-                    <li class="nav-sections-section"><a href="/hardfork" data-event-category="Top"
-                            data-event-action="Channels" data-event-label="Hard Fork"
-                            data-event-non-interaction="true">Hard Fork</a></li>
-                    <li class="nav-sections-section"><a href="/plugged" data-event-category="Top"
-                            data-event-action="Channels" data-event-label="Plugged"
-                            data-event-non-interaction="true">Plugged</a></li>
-                    <li class="nav-sections-section"><a href="/adobe-fundamentals" data-event-category="Top"
-                            data-event-action="Channels" data-event-label="Fundamentals"
-                            data-event-non-interaction="true">Fundamentals</a></li>
-                    <li class="nav-sections-section"><a href="/work2030" data-event-category="Top"
-                            data-event-action="Channels" data-event-label="Work2030"
-                            data-event-non-interaction="true">Work 2030</a></li>
-                </ul>
-                <ul class="nav-icons">
-                    <li class="cookieConsent">
-                        <a href="#"><i class="icon icon--cookie"></i></a>
-                    </li>
-                    <li><a id="search--open" href="#"><i class="icon icon--search--dark"></i></a>
-                    </li>
-                </ul>
-
+        <div class="row">
+            <div class="yellow-bar">
+                <a href="https://thenextweb.com/hardfork-summit" target="_blank">How will blockchain impact fintech and business? Join Hard Fork Summit to find out →</a>
             </div>
-        </nav> -->
+        </div>
     </div>
 </body>
 

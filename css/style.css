@@ -1,7 +1,7 @@
 /* * Global style */
 html {
   box-sizing: border-box;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 *,
@@ -296,65 +296,131 @@ header {
   color: white;
 }
 
-.TNW-logo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 106px;
-  height: 80px;
-  background: linear-gradient(to bottom right, #c09, #f42 85%);
-  background-color: #f42;
-  text-align: center;
-  z-index: 1;
-}
-
-.TNW-logo img {
-  width: 80px;
-  padding-top: 30px;
-  -webkit-transition: padding-top 1s;
-  transition: padding-top 1s;
-}
-
 .dropdown-content {
+  background-color: #131313;
   display: none;
   position: absolute;
-  background-color: #131313;
   width: 220px;
   z-index: 1;
 }
 
 .dropdown-content a {
   color: #fff9;
-  font-size: 13px;
   display: block;
+  font-size: 13px;
   width: 100%;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+  z-index: 2;
 }
 
 .news-bar {
+  background-color: #131313;
   display: flex;
+  height: 32px;
   margin: 0;
   padding-left: 20px;
-  background-color: #131313;
-  height: 32px;
+  padding-right: 15px;
+}
+
+.news-bar li a {
+  color: #fff9;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 32px;
+  padding: 0 7px;
+  text-decoration: none;
+}
+
+.TNW-logo {
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  background-color: #f42;
+  display: flex;
+  position: fixed;
+  left: 0;
+  height: 48px;
+  top: 32px;
+  width: 106px;
+  padding-left: 16px;
+  z-index: 1;
+}
+
+.TNW-logo img {
+  height: 35px;
+  padding-top: 16px;
+  transition: padding-top 1s;
+  width: 70px;
+  z-index: 1;
+}
+
+.latest-bar-ul {
+  padding-left: 7em;
+}
+
+.latest-bar-ul li {
+  float: left;
+}
+
+.latest-bar-ul li a {
+  color: #aaa;
+  display: inline-block;
+  font-family: "Play", sans-serif;
+  font-size: 14px;
+  padding: 0 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.latest-bar {
+  background: #fff;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
+  height: 48px;
+  left: 0;
+  position: sticky;
+  right: 0;
+  overflow: hidden;
+  top: 0;
+  z-index: 1;
+}
+
+.search {
+  float: right;
+  border-left: 1px solid #eee;
+  margin-right: 15px;
+  padding-left: 10px;
+  height: 100%;
+}
+
+.search_logo {
+  cursor: pointer;
+  opacity: 0.4;
+  width: 1.5em;
 }
 
 .news-bar li:nth-child(6) {
   flex: 1;
 }
 
-.news-bar li a {
-  display: inline-block;
-  padding: 0 7px;
-  text-decoration: none;
-  font-size: 13px;
-  line-height: 32px;
-  color: #fff9;
-}
-
 .news-bar li a:hover {
   color: whitesmoke;
+}
+
+.latest-bar-ul li a:hover {
+  color: black;
+}
+
+.yellow-bar {
+  position: sticky;
+  top: 48px;
+  height: 30px;
+  width: 100%;
+  color: #000;
+  background-color: #fd3;
+  z-index: 1;
+  line-height: 30px;
+  font-size: 14px;
+  padding-left: 15px;
+  box-shadow: 0 16px 48px #00000026;
 }
