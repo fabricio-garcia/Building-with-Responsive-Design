@@ -337,13 +337,11 @@ header {
 .TNW-logo {
   background: linear-gradient(to bottom right, #c09, #f42 85%);
   background-color: #f42;
-  display: flex;
-  position: fixed;
+  float: left;
   left: 0;
   height: 48px;
-  top: 32px;
-  width: 106px;
   padding-left: 16px;
+  width: 106px;
   z-index: 1;
 }
 
@@ -352,6 +350,17 @@ header {
   padding-top: 16px;
   transition: padding-top 1s;
   width: 70px;
+  z-index: 1;
+}
+
+.latest-bar {
+  background: #fff;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
+  height: 48px;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow: hidden;
   z-index: 1;
 }
 
@@ -370,19 +379,6 @@ header {
   font-size: 14px;
   padding: 0 5px;
   text-align: center;
-  text-decoration: none;
-}
-
-.latest-bar {
-  background: #fff;
-  box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
-  height: 48px;
-  left: 0;
-  position: sticky;
-  right: 0;
-  overflow: hidden;
-  top: 0;
-  z-index: 1;
 }
 
 .search {
@@ -423,4 +419,16 @@ header {
   font-size: 14px;
   padding-left: 15px;
   box-shadow: 0 16px 48px #00000026;
+}
+
+#three-main-articles {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 242px 242px;
+  padding: 7px 0;
+}
+
+.main-article-2 {
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
