@@ -421,14 +421,18 @@ header {
   box-shadow: 0 16px 48px #00000026;
 }
 
-#three-main-articles {
+#feature-articles {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 242px 242px;
   padding: 7px 0;
 }
 
-.main-article-2 {
+.feature-article-1 {
   grid-row-start: 1;
   grid-row-end: 2;
+}
+
+.feature-article-3 {
+  grid-column-start: 2;
 }
