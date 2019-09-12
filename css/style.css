@@ -454,9 +454,12 @@ header {
 
 #latest-news h1 {
   color: red;
-  font-size: 1.7em;
+  font-size: 28px;
   padding-bottom: 10px;
-  font-weight: bold;
+}
+
+#latest-news img {
+  padding-bottom: 5px;
 }
 
 .latest-news-items .latest-news-link {
