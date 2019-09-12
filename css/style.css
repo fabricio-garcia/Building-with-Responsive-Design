@@ -439,22 +439,24 @@ header {
   grid-column-start: 2;
 }
 
-/* * Latest news */
+/* * 4 cols sections */
 
-#latest-news {
-  padding: 2em 5em 2em 5em;
-}
-
-.latest-news-grid {
+.four-col-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 5px;
   grid-row-gap: 1.5em;
 }
 
-#latest-news h1 {
-  color: red;
-  font-size: 28px;
+#latest-news,
+#apple-special {
+  padding: 5em 5em 27em 5em;
+}
+
+#latest-news h1,
+#apple-special h1 {
+  color: #f42;
+  font-size: 1.7em;
   padding-bottom: 10px;
 }
 
@@ -462,17 +464,26 @@ header {
   padding-bottom: 5px;
 }
 
-.latest-news-items .latest-news-link {
+#latest-news h1:hover,
+#apple-special h1:hover {
+  color: #131313;
+}
+
+.four-col-items .latest-news-link {
   color: #131313;
   font-weight: 700;
   display: block;
 }
 
-.latest-news-items .author,
-.latest-news-items time,
-.latest-news-items span {
+.four-col-items .author,
+.four-col-items time,
+.four-col-items span {
   color: #aaa;
   font-size: 13px;
   text-decoration: none;
   font-family: Arial, sans-serif;
+}
+
+a[href*="2019"]:hover {
+  color: #f42;
 }
