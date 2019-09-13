@@ -526,8 +526,17 @@ a[href*="2019"]:hover {
   margin-top: 10px;
 }
 
+.latest-funding-ul {
+  padding-left: 0;
+  padding-right: 28px;
+}
+
+img[src*="funding"] {
+  padding-right: 1.6em;
+}
+
 .latest-funding-ul li:nth-child(2) {
   border-bottom: 1px solid rgba(255, 68, 34, 0.25);
   margin-bottom: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
