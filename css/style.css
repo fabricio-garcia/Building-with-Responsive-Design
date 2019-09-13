@@ -325,6 +325,12 @@ header {
   padding-right: 15px;
 }
 
+.latest-funding-ul a {
+  color: #555;
+  font-size: 13px;
+  padding-left: 1.5em;
+}
+
 .news-bar li a {
   color: #fff9;
   display: inline-block;
@@ -449,12 +455,27 @@ header {
 }
 
 #latest-news,
+#apple-special,
+#latest-funding {
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+#latest-news {
+  padding-top: 5em;
+}
+
 #apple-special {
-  padding: 5em 5em 27em 5em;
+  padding-top: 33em;
+}
+
+#latest-funding {
+  padding-top: 19em;
 }
 
 #latest-news h1,
-#apple-special h1 {
+#apple-special h1,
+#latest-funding h1 {
   color: #f42;
   font-size: 1.7em;
   padding-bottom: 10px;
@@ -465,7 +486,9 @@ header {
 }
 
 #latest-news h1:hover,
-#apple-special h1:hover {
+#apple-special h1:hover,
+#latest-funding h1:hover,
+a[href*="index.co"]:hover {
   color: #131313;
 }
 
@@ -486,4 +509,25 @@ header {
 
 a[href*="2019"]:hover {
   color: #f42;
+}
+
+#latest-funding-h1 {
+  float: left;
+}
+
+.latest-funding-menu {
+  color: #f42;
+  float: right;
+  font-size: 1.2em;
+  font-weight: 700;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.latest-funding-ul li:nth-child(2) {
+  border-bottom: 1px solid rgba(255, 68, 34, 0.25);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
