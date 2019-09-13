@@ -462,15 +462,18 @@ header {
 }
 
 #latest-news {
-  padding-top: 5em;
-}
+  margin-top: 5em;
+  height: 40em;
+ }
 
 #apple-special {
-  padding-top: 33em;
+  margin-top: 5em;
+  height: 20em;
 }
 
 #latest-funding {
-  padding-top: 19em;
+  margin-top: 5em;
+  height: 20em;
 }
 
 #latest-news h1,
@@ -549,8 +552,9 @@ img[src*="funding"] {
 /* * 3 cols sections */
 
 #apps-gear-tech {
-  margin-top: 22em;
+  margin-top: 5em;
   padding-left: 5em;
+  height: 30em;
 }
 
 div.three-col-items:nth-child(1) {
@@ -559,4 +563,24 @@ div.three-col-items:nth-child(1) {
 
 div.three-col-items:nth-child(2) {
   padding-right: 2em;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1192px;
+  padding: 0 20px;
+}
+
+.footer {
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease,-webkit-transform .5s ease;
+  position: relative;
+  will-change: transform;
+  z-index: 4;
+}
+
+.footer-links {
+  background: #131313;
+  padding: 2.5em 0;
 }
