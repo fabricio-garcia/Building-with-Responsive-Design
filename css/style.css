@@ -462,17 +462,17 @@ header {
 }
 
 #latest-news {
-  margin-top: 5em;
+  margin-top: 4em;
   height: 40em;
  }
 
 #apple-special {
-  margin-top: 5em;
+  margin-top: 4em;
   height: 20em;
 }
 
 #latest-funding {
-  margin-top: 5em;
+  margin-top: 4em;
   height: 20em;
 }
 
@@ -552,7 +552,7 @@ img[src*="funding"] {
 /* * 3 cols sections */
 
 #apps-gear-tech {
-  margin-top: 5em;
+  margin-top: 4em;
   padding-left: 5em;
   height: 30em;
 }
@@ -565,22 +565,81 @@ div.three-col-items:nth-child(2) {
   padding-right: 2em;
 }
 
-.wrapper {
-  margin: 0 auto;
-  max-width: 1192px;
-  padding: 0 20px;
+nav.social {
+  grid-template-columns: repeat(7,auto);
+  padding: 20px 0;
 }
 
-.footer {
-  transition: -webkit-transform .5s ease;
-  transition: transform .5s ease;
-  transition: transform .5s ease,-webkit-transform .5s ease;
+nav.social, nav.footer-nav {
+  display: grid;
+  justify-content: center;
+  grid-gap: 10px;
+  background-color: #222;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+    color: gray;
+}
+
+nav.footer-nav {
+  grid-template-columns: repeat(6,auto);
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  font-size: 0.9em;
+  padding-bottom: 40px;  
+}
+
+.copyright {
+  background-color: #060606;
+  color: lightGray;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  height: 40px;
+}
+
+img {
+  border-style: none;
+}
+
+.social-icon img {
+  object-fit: contain;
+  height: 60%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+a.social-icon {
+  display: block grid;
+  border-radius: 50%;
+  background-color: #444;
+  height: 30px;
+  width: 30px;
   position: relative;
-  will-change: transform;
-  z-index: 4;
 }
 
-.footer-links {
-  background: #131313;
-  padding: 2.5em 0;
+.copyright img {
+  height: 0.9em;
 }
