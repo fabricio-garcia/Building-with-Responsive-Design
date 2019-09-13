@@ -485,10 +485,15 @@ header {
   padding-bottom: 5px;
 }
 
+#apps-gear-tech h1 {
+  color: #f42;
+}
+
 #latest-news h1:hover,
 #apple-special h1:hover,
 #latest-funding h1:hover,
-a[href*="index.co"]:hover {
+a[href*="index.co"]:hover,
+#apps-gear-tech h1:hover {
   color: #131313;
 }
 
@@ -539,4 +544,19 @@ img[src*="funding"] {
   border-bottom: 1px solid rgba(255, 68, 34, 0.25);
   margin-bottom: 10px;
   padding-bottom: 30px;
+}
+
+/* * 3 cols sections */
+
+#apps-gear-tech {
+  margin-top: 22em;
+  padding-left: 5em;
+}
+
+div.three-col-items:nth-child(1) {
+  padding-right: 2em;
+}
+
+div.three-col-items:nth-child(2) {
+  padding-right: 2em;
 }
