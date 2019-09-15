@@ -464,7 +464,7 @@ header {
 #latest-news {
   margin-top: 4em;
   height: 40em;
- }
+}
 
 #apple-special {
   margin-top: 4em;
@@ -551,6 +551,13 @@ img[src*="funding"] {
 
 /* * 3 cols sections */
 
+.three-col-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 1.5em;
+}
+
 #apps-gear-tech {
   margin-top: 4em;
   padding-left: 5em;
@@ -566,11 +573,12 @@ div.three-col-items:nth-child(2) {
 }
 
 nav.social {
-  grid-template-columns: repeat(7,auto);
-  padding: 20px 0;
+  grid-template-columns: repeat(7, auto);
+  padding: 50px 0;
 }
 
-nav.social, nav.footer-nav {
+nav.social,
+nav.footer-nav {
   display: grid;
   justify-content: center;
   grid-gap: 10px;
@@ -584,7 +592,6 @@ footer {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  
 }
 
 a {
@@ -595,15 +602,15 @@ a {
   font: inherit;
   vertical-align: baseline;
   text-decoration: none;
-    color: gray;
+  color: gray;
 }
 
 nav.footer-nav {
-  grid-template-columns: repeat(6,auto);
+  grid-template-columns: repeat(6, auto);
   text-transform: uppercase;
   font-family: Arial, sans-serif;
   font-size: 0.9em;
-  padding-bottom: 40px;  
+  padding-bottom: 40px;
 }
 
 .copyright {
