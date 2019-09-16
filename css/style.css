@@ -12,6 +12,17 @@ html {
   text-decoration: none;
 }
 
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: gray;
+}
+
 .content-box-element {
   box-sizing: content-box;
 }
@@ -22,7 +33,7 @@ html {
   position: relative;
   margin: auto;
   width: 100%;
-  max-width: 1366px;
+  max-width: 1332px;
 }
 
 .row {
@@ -32,7 +43,7 @@ html {
   margin: auto;
   position: relative;
   width: 100%;
-  max-width: 1366px;
+  max-width: 1332px;
 }
 
 [class*="col-"] {
@@ -288,6 +299,10 @@ html {
   }
 }
 
+img {
+  border-style: none;
+}
+
 /* * Header */
 
 header {
@@ -434,19 +449,28 @@ header {
 #feature-articles {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 205px 205px;
+  grid-template-rows: 226px 226px;
+  grid-column-gap: 0.5em;
+  grid-row-gap: 0.5em;
   padding: 7px 0;
-  height: 450px;
+  height: 480px;
 }
 
-.feature-article-1 img {
-  object-fit: cover;
-  width: 100%;
+.feature-article-1 img,
+.feature-article-2 img,
+.feature-article-3 img,
+.four-col-items img {
+  height: auto;
+  max-width: 100%;
+}
+
+.three-col-items img {
+  height: 100%;
+  max-width: 100%;
 }
 
 .feature-article-1 {
-  grid-row-start: 1;
-  grid-row-end: 2;
+  padding-left: 1em;
 }
 
 .feature-article-3 {
@@ -471,7 +495,7 @@ header {
 
 #latest-news {
   margin-top: 4em;
-  height: 40em;
+  height: 35em;
 }
 
 #apple-special {
@@ -490,6 +514,18 @@ header {
   color: #f42;
   font-size: 1.7em;
   padding-bottom: 10px;
+}
+
+.social-icon img {
+  object-fit: contain;
+  height: 60%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+.copyright img {
+  height: 0.9em;
 }
 
 #latest-news img {
@@ -602,17 +638,6 @@ footer {
   vertical-align: baseline;
 }
 
-a {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  text-decoration: none;
-  color: gray;
-}
-
 nav.footer-nav {
   grid-template-columns: repeat(6, auto);
   text-transform: uppercase;
@@ -634,18 +659,6 @@ nav.footer-nav {
   height: 40px;
 }
 
-img {
-  border-style: none;
-}
-
-.social-icon img {
-  object-fit: contain;
-  height: 60%;
-  position: absolute;
-  top: 20%;
-  left: 20%;
-}
-
 a.social-icon {
   display: block grid;
   border-radius: 50%;
@@ -655,11 +668,7 @@ a.social-icon {
   position: relative;
 }
 
-.copyright img {
-  height: 0.9em;
-}
-
-/* * 3 Responsive design */
+/* * Responsive design */
 
 @media only screen and (max-width: 1360px) {
   header ul {
