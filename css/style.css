@@ -284,6 +284,13 @@ header {
   grid-row-gap: 1.5em;
 }
 
+.four-col-grid-f {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 1.5em;
+}
+
 #latest-news,
 #apple-special,
 #latest-funding {
@@ -415,13 +422,13 @@ div.three-col-items:nth-child(2) {
 }
 
 nav.social {
-  grid-template-columns: repeat(7, auto);
   padding: 50px 0;
 }
 
 nav.social,
 nav.footer-nav {
   display: grid;
+  grid-template-columns: repeat(7, auto);
   justify-content: center;
   grid-gap: 10px;
   background-color: #222;
@@ -437,7 +444,6 @@ footer {
 }
 
 nav.footer-nav {
-  grid-template-columns: repeat(6, auto);
   text-transform: uppercase;
   font-family: Arial, sans-serif;
   font-size: 0.9em;
@@ -505,6 +511,10 @@ a.social-icon {
     font-weight: 700;
     display: inline-block;
   }
+
+  .social-icon {
+    visibility: hidden;
+  }
 }
 
 @media only screen and (max-width: 760px) {
@@ -525,10 +535,49 @@ a.social-icon {
   footer {
     font-size: 70%;
   }
+
+  .social-icon {
+    visibility: hidden;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-  footer {
-    font-size: 70%;
+  .social-icon {
+    visibility: hidden;
+  }
+
+  .four-col-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 1.5em;
+  }
+
+  #latest-news {
+    margin-top: 4em;
+    height: 110em;
+  }
+
+  #apple-special {
+    margin-top: 4em;
+    height: 65em;
+  }
+
+  #latest-funding {
+    margin-top: 4em;
+    height: 65em;
+  }
+
+  .three-col-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 1.5em;
+  }
+
+  #apps-gear-tech {
+    margin-top: 4em;
+    padding-left: 5em;
+    height: 70em;
   }
 }
