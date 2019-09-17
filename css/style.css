@@ -488,11 +488,22 @@ a.social-icon {
 
   #latest-funding {
     margin-top: 4em;
-    height: 30em;
+    height: 19em;
   }
 
   #apps-gear-tech {
     padding-left: 0;
+  }
+
+  .no-show {
+    visibility: hidden;
+  }
+
+  .latest-funding-menu {
+    color: #f42;
+    font-size: 0.9em;
+    font-weight: 700;
+    display: inline-block;
   }
 }
 
@@ -511,6 +522,12 @@ a.social-icon {
     height: auto;
   }
 
+  footer {
+    font-size: 70%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
   footer {
     font-size: 70%;
   }
