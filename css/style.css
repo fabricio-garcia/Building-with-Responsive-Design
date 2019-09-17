@@ -1,6 +1,7 @@
 /* * Global style */
 html {
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
 *,
@@ -8,6 +9,18 @@ html {
 *::after {
   box-sizing: inherit;
   list-style: none;
+  text-decoration: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: gray;
 }
 
 .content-box-element {
@@ -20,6 +33,7 @@ html {
   position: relative;
   margin: auto;
   width: 100%;
+  max-width: 1332px;
 }
 
 .row {
@@ -29,6 +43,7 @@ html {
   margin: auto;
   position: relative;
   width: 100%;
+  max-width: 1332px;
 }
 
 [class*="col-"] {
@@ -83,203 +98,486 @@ html {
   width: 100%;
 }
 
-/* * Media Queries */
-@media screen and (min-width: 480px) {
-  .col-xs-12 {
-    width: 100%;
+img {
+  border-style: none;
+}
+
+/* * Header */
+
+header {
+  position: relative;
+}
+
+#news {
+  color: white;
+}
+
+.dropdown-content {
+  background-color: #131313;
+  display: none;
+  position: absolute;
+  width: 220px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff9;
+  display: block;
+  font-size: 13px;
+  width: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  z-index: 2;
+}
+
+.news-bar {
+  background-color: #131313;
+  display: flex;
+  height: 32px;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+.latest-funding-ul a {
+  color: #555;
+  font-size: 13px;
+  padding-left: 1.5em;
+}
+
+.news-bar li a {
+  color: #fff9;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 32px;
+  padding: 0 7px;
+  text-decoration: none;
+}
+
+.TNW-logo {
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  background-color: #f42;
+  float: left;
+  left: 0;
+  height: 48px;
+  padding-left: 16px;
+  width: 106px;
+  z-index: 1;
+}
+
+.TNW-logo img {
+  height: 35px;
+  padding-top: 16px;
+  transition: padding-top 1s;
+  width: 70px;
+  z-index: 1;
+}
+
+.latest-bar {
+  background: #fff;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
+  height: 48px;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.latest-bar-ul {
+  padding-left: 7em;
+}
+
+.latest-bar-ul li {
+  float: left;
+}
+
+.latest-bar-ul li a {
+  color: #aaa;
+  display: inline-block;
+  font-family: "Play", sans-serif;
+  font-size: 14px;
+  padding: 0 5px;
+  text-align: center;
+}
+
+.search {
+  float: right;
+  border-left: 1px solid #eee;
+  margin-right: 15px;
+  padding-left: 10px;
+  height: 100%;
+}
+
+.search_logo {
+  cursor: pointer;
+  opacity: 0.4;
+  width: 1.5em;
+}
+
+.news-bar li:nth-child(6) {
+  flex: 1;
+}
+
+.news-bar li a:hover {
+  color: whitesmoke;
+}
+
+.latest-bar-ul li a:hover {
+  color: black;
+}
+
+.yellow-bar {
+  position: sticky;
+  top: 48px;
+  height: 30px;
+  width: 100%;
+  color: #000;
+  background-color: #fd3;
+  z-index: 1;
+  line-height: 30px;
+  font-size: 14px;
+  padding-left: 15px;
+  box-shadow: 0 16px 48px #00000026;
+}
+
+/* * Featured articles */
+
+#feature-articles {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 0.5em;
+  grid-row-gap: 0.5em;
+  padding: 7px 0;
+  height: auto;
+}
+
+#inside-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% 50%;
+  height: 100%;
+}
+
+.feature-article-1 img,
+.feature-article-2 img,
+.feature-article-3 img,
+.four-col-items img {
+  height: auto;
+  max-width: 100%;
+}
+
+.three-col-items img {
+  height: 100%;
+  max-width: 100%;
+}
+
+/* * 4 cols sections */
+
+.four-col-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 1.5em;
+}
+
+.four-col-grid-f {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 1.5em;
+}
+
+#latest-news,
+#apple-special,
+#latest-funding {
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+#latest-news {
+  margin-top: 4em;
+  height: 35em;
+}
+
+#apple-special {
+  margin-top: 4em;
+  height: 20em;
+}
+
+#latest-funding {
+  margin-top: 4em;
+  height: 20em;
+}
+
+#latest-news h1,
+#apple-special h1,
+#latest-funding h1 {
+  color: #f42;
+  font-size: 1.7em;
+  padding-bottom: 10px;
+}
+
+.social-icon img {
+  object-fit: contain;
+  height: 60%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+.copyright img {
+  height: 0.9em;
+}
+
+#latest-news img {
+  padding-bottom: 5px;
+}
+
+#apps-gear-tech h1 {
+  color: #f42;
+}
+
+#latest-news h1:hover,
+#apple-special h1:hover,
+#latest-funding h1:hover,
+a[href*="index.co"]:hover,
+#apps-gear-tech h1:hover {
+  color: #131313;
+}
+
+.four-col-items .latest-news-link {
+  color: #131313;
+  font-weight: 700;
+  display: block;
+}
+
+.four-col-items .author,
+.four-col-items time,
+.four-col-items span {
+  color: #aaa;
+  font-size: 13px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+a[href*="2019"]:hover {
+  color: #f42;
+}
+
+#latest-funding-h1 {
+  float: left;
+}
+
+.latest-funding-menu {
+  color: #f42;
+  float: right;
+  font-size: 1.2em;
+  font-weight: 700;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.latest-funding-ul {
+  padding-left: 0;
+  padding-right: 28px;
+}
+
+img[src*="funding"] {
+  padding-right: 1.6em;
+}
+
+.latest-funding-ul li:nth-child(2) {
+  border-bottom: 1px solid rgba(255, 68, 34, 0.25);
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+}
+
+/* * 3 cols sections */
+
+.three-col-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 1.5em;
+}
+
+#apps-gear-tech {
+  margin-top: 4em;
+  padding-left: 5em;
+  height: 30em;
+}
+
+div.three-col-items:nth-child(1) {
+  padding-right: 2em;
+}
+
+div.three-col-items:nth-child(2) {
+  padding-right: 2em;
+}
+
+nav.social {
+  padding: 50px 0;
+}
+
+nav.social,
+nav.footer-nav {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  justify-content: center;
+  grid-gap: 10px;
+  background-color: #222;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+nav.footer-nav {
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  font-size: 0.9em;
+  padding-bottom: 40px;
+}
+
+.copyright {
+  background-color: #060606;
+  color: lightGray;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  height: 40px;
+}
+
+a.social-icon {
+  display: block grid;
+  border-radius: 50%;
+  background-color: #444;
+  height: 30px;
+  width: 30px;
+  position: relative;
+}
+
+/* * Responsive design */
+
+@media only screen and (max-width: 1030px) {
+  .four-col-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 1.5em;
   }
 
-  .col-xs-11 {
-    width: 91.66666667%;
+  #latest-news {
+    margin-top: 4em;
+    height: 50em;
   }
 
-  .col-xs-10 {
-    width: 83.33333333%;
+  #apple-special {
+    margin-top: 8em;
+    height: 33em;
   }
 
-  .col-xs-9 {
-    width: 75%;
+  #latest-funding {
+    margin-top: 4em;
+    height: 19em;
   }
 
-  .col-xs-8 {
-    width: 66.66666667%;
+  #apps-gear-tech {
+    padding-left: 0;
   }
 
-  .col-xs-7 {
-    width: 58.33333333%;
+  .no-show {
+    visibility: hidden;
   }
 
-  .col-xs-6 {
-    width: 50%;
+  .latest-funding-menu {
+    color: #f42;
+    font-size: 0.9em;
+    font-weight: 700;
+    display: inline-block;
   }
 
-  .col-xs-5 {
-    width: 41.66666667%;
-  }
-
-  .col-xs-4 {
-    width: 33.33333333%;
-  }
-
-  .col-xs-3 {
-    width: 25%;
-  }
-
-  .col-xs-2 {
-    width: 16.66666667%;
-  }
-
-  .col-xs-1 {
-    width: 8.33333333%;
+  .social-icon {
+    visibility: hidden;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .col-sm-12 {
-    width: 100%;
+@media only screen and (max-width: 760px) {
+  #feature-articles {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 0.5em;
+    padding: 7px 0;
+    height: auto;
   }
 
-  .col-sm-11 {
-    width: 91.66666667%;
+  #inside-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
   }
 
-  .col-sm-10 {
-    width: 83.33333333%;
+  footer {
+    font-size: 70%;
   }
 
-  .col-sm-9 {
-    width: 75%;
-  }
-
-  .col-sm-8 {
-    width: 66.66666667%;
-  }
-
-  .col-sm-7 {
-    width: 58.33333333%;
-  }
-
-  .col-sm-6 {
-    width: 50%;
-  }
-
-  .col-sm-5 {
-    width: 41.66666667%;
-  }
-
-  .col-sm-4 {
-    width: 33.33333333%;
-  }
-
-  .col-sm-3 {
-    width: 25%;
-  }
-
-  .col-sm-2 {
-    width: 16.66666667%;
-  }
-
-  .col-sm-1 {
-    width: 8.33333333%;
+  .social-icon {
+    visibility: hidden;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .col-md-12 {
-    width: 100%;
+@media only screen and (max-width: 480px) {
+  .social-icon {
+    visibility: hidden;
   }
 
-  .col-md-11 {
-    width: 91.66666667%;
+  .four-col-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 1.5em;
   }
 
-  .col-md-10 {
-    width: 83.33333333%;
+  #latest-news {
+    margin-top: 4em;
+    height: 110em;
   }
 
-  .col-md-9 {
-    width: 75%;
+  #apple-special {
+    margin-top: 4em;
+    height: 65em;
   }
 
-  .col-md-8 {
-    width: 66.66666667%;
+  #latest-funding {
+    margin-top: 4em;
+    height: 65em;
   }
 
-  .col-md-7 {
-    width: 58.33333333%;
+  .three-col-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 1.5em;
   }
 
-  .col-md-6 {
-    width: 50%;
-  }
-
-  .col-md-5 {
-    width: 41.66666667%;
-  }
-
-  .col-md-4 {
-    width: 33.33333333%;
-  }
-
-  .col-md-3 {
-    width: 25%;
-  }
-
-  .col-md-2 {
-    width: 16.66666667%;
-  }
-
-  .col-md-1 {
-    width: 8.33333333%;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .col-lg-12 {
-    width: 100%;
-  }
-
-  .col-lg-11 {
-    width: 91.66666667%;
-  }
-
-  .col-lg-10 {
-    width: 83.33333333%;
-  }
-
-  .col-lg-9 {
-    width: 75%;
-  }
-
-  .col-lg-8 {
-    width: 66.66666667%;
-  }
-
-  .col-lg-7 {
-    width: 58.33333333%;
-  }
-
-  .col-lg-6 {
-    width: 50%;
-  }
-
-  .col-lg-5 {
-    width: 41.66666667%;
-  }
-
-  .col-lg-4 {
-    width: 33.33333333%;
-  }
-
-  .col-lg-3 {
-    width: 25%;
-  }
-
-  .col-lg-2 {
-    width: 16.66666667%;
-  }
-
-  .col-lg-1 {
-    width: 8.33333333%;
+  #apps-gear-tech {
+    margin-top: 4em;
+    padding-left: 5em;
+    height: 70em;
   }
 }
