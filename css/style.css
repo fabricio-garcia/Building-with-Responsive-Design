@@ -468,6 +468,34 @@ a.social-icon {
 
 /* * Responsive design */
 
+@media only screen and (max-width: 1030px) {
+  .four-col-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 1.5em;
+  }
+
+  #latest-news {
+    margin-top: 4em;
+    height: 50em;
+  }
+
+  #apple-special {
+    margin-top: 8em;
+    height: 33em;
+  }
+
+  #latest-funding {
+    margin-top: 4em;
+    height: 30em;
+  }
+
+  #apps-gear-tech {
+    padding-left: 0;
+  }
+}
+
 @media only screen and (max-width: 760px) {
   #feature-articles {
     display: grid;
@@ -481,5 +509,9 @@ a.social-icon {
     display: grid;
     grid-template-columns: 1fr;
     height: auto;
+  }
+
+  footer {
+    font-size: 70%;
   }
 }
