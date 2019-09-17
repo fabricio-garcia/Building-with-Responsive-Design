@@ -456,7 +456,7 @@ header {
   height: auto;
 }
 
-#experimento {
+#inside-grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 50% 50%;
@@ -474,14 +474,6 @@ header {
 .three-col-items img {
   height: 100%;
   max-width: 100%;
-}
-
-.feature-article-1 {
-  padding-left: 1em;
-}
-
-.feature-article-3 {
-  grid-column-start: 2;
 }
 
 /* * 4 cols sections */
