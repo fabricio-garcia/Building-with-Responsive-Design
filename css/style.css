@@ -449,11 +449,18 @@ header {
 #feature-articles {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 226px 226px;
+  grid-template-rows: auto;
   grid-column-gap: 0.5em;
   grid-row-gap: 0.5em;
   padding: 7px 0;
-  height: 480px;
+  height: auto;
+}
+
+#experimento {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% 50%;
+  height: 100%;
 }
 
 .feature-article-1 img,
