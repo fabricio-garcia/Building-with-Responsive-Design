@@ -1,0 +1,1125 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  min-height: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+/* top bar */
+
+.dropdown-content a {
+  color: #fff9;
+  font-size: 13px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: left !important;
+  padding-left: 10px;
+}
+
+.logo2-dropdown-content a {
+  display: block;
+  color: #fff9;
+  font-size: 13px;
+  text-decoration: none;
+  width: 100%;
+  padding: 8px;
+}
+
+.latest-bar li a {
+  display: inline-block;
+  text-align: center;
+  padding: 0 5px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 48px;
+  color: #aaa;
+}
+
+.news-bar {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 20px;
+  overflow: hidden;
+  background-color: #131313;
+  height: 32px;
+}
+
+.news-bar li {
+  float: left;
+  list-style: none;
+}
+
+.news-bar li a {
+  display: inline-block;
+  text-align: center;
+  padding: 0 7px;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 32px;
+  color: #fff9;
+}
+
+#news {
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #131313;
+  top: 32px;
+  width: 220px;
+  text-align: left;
+  z-index: 999;
+}
+
+.last-drop {
+  border-top: 1px solid #ffffff1a;
+}
+
+.logo2-dropdown-content a:hover {
+  color: #fff;
+}
+
+.news-bar li a:hover {
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* logo */
+.logo {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 106px;
+  height: 80px;
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  background-color: #f42;
+  text-align: center;
+  z-index: 33;
+}
+
+.logo img {
+  width: 80px;
+  padding-top: 30px;
+  -webkit-transition: padding-top 1s;
+  transition: padding-top 1s;
+  z-index: 3;
+}
+
+.logo2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 106px;
+  height: 48px;
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  background-color: #f42;
+  text-align: center;
+  z-index: 9;
+}
+
+.logo2 img {
+  width: 70px;
+  height: 35px;
+  padding-top: 16px;
+  -webkit-transition: padding-top 1s;
+  transition: padding-top 1s;
+  z-index: 9;
+}
+
+.logo2-dropdown-content {
+  position: absolute;
+  background-color: #131313;
+  top: 78px;
+  left: 0;
+  width: 106px;
+  text-align: center;
+  z-index: 9;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.logo2:hover,
+.logo:hover {
+  background-image: url(../img/home-1.gif);
+}
+
+.logo2:hover .logo2-dropdown-content {
+  max-height: 1000px;
+}
+
+/* main navigation bar left */
+
+.nav {
+  background: #fff;
+  -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
+  height: 48px;
+  left: 0;
+  position: sticky;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  overflow: hidden;
+}
+
+.latest-bar {
+  font-family: "Play", sans-serif;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 15px;
+}
+
+.latest-bar li {
+  float: left;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  list-style: none;
+}
+
+/* main navigation bar right */
+
+.search-right {
+  display: flex;
+  float: right;
+  z-index: 999;
+}
+
+.fa-bars {
+  display: none;
+}
+
+.btn {
+  position: relative;
+  bottom: 3px;
+  background-color: #0cc;
+  height: 28px;
+  width: 93px;
+  line-height: 28px;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 3px;
+  text-decoration: none;
+  color: white;
+  margin: 13px 5px;
+}
+
+.fa-search {
+  color: #aaa;
+  padding: 17px 20px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  border-right: 1px solid #eee;
+  cursor: pointer;
+}
+
+.yellow-bar {
+  position: sticky;
+  top: 48px;
+  height: 30px;
+  width: 100%;
+  color: #000;
+  background-color: #fd3;
+  z-index: 99;
+  line-height: 30px;
+  font-size: 14px;
+  padding-left: 15px;
+  box-shadow: 0 16px 48px #00000026;
+}
+
+/* headlines */
+
+.headlines {
+  height: 75vh;
+  padding: 2px 6px;
+  display: grid;
+  grid-gap: 6px;
+  grid-template-areas: "art1 art1 art2" "art1 art1 art3";
+  max-height: 560px;
+}
+
+/* main headline */
+.cover-image {
+  background-image: url(../img/airpodsdeal-796x417.png);
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  grid-area: art1;
+  position: relative;
+  mix-blend-mode: darken;
+}
+
+.cover-gradient {
+  transition: background-color 0.4s ease;
+  background: transparent url(../img/cover-gradient.png) no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 6;
+  mix-blend-mode: lighten;
+}
+
+.cover-gradient:hover {
+  mix-blend-mode: darken;
+}
+
+.cover-logo {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  max-width: 50%;
+  height: 112px;
+  z-index: 7;
+}
+
+.cover-date {
+  color: #fff;
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  z-index: 7;
+}
+
+.main-header {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  z-index: 7;
+  padding: 5px;
+}
+
+.main-header h5 {
+  position: relative;
+  color: #fff;
+  left: 2%;
+  top: 10px;
+  font-size: 14px;
+}
+
+.main-header h2 {
+  position: relative;
+  color: #fff;
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 1;
+  padding-right: 5px;
+  left: 2%;
+  right: 2%;
+}
+
+.by {
+  position: relative;
+  color: #fff9;
+  bottom: 0.3em;
+  left: 2%;
+  font-size: 12px;
+}
+
+.fa-clock,
+.fa-share-alt {
+  padding: 0 5px;
+}
+
+/* small headlines */
+
+.small-headline {
+  transition: background-color 0.4s ease;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  filter: opacity(85%);
+}
+
+.small-headline:hover {
+  filter: opacity(100%);
+}
+
+#small-headline1 {
+  background-image: url(../img/paddy-emoji-796x448.png);
+  grid-area: art2;
+}
+
+#small-headline2 {
+  background-image: url(../img/whatsapp-796x433.jpg);
+  grid-area: art3;
+}
+
+.small-header {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  z-index: 7;
+  padding: 5px;
+}
+
+.small-header h5 {
+  position: relative;
+  color: #fff;
+  left: 2%;
+  top: 10px;
+  font-size: 14px;
+}
+
+.small-header h2 {
+  position: relative;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1;
+  padding-right: 5px;
+  left: 2%;
+  right: 2%;
+}
+
+/* main section */
+
+.wraper {
+  margin: 0 auto;
+  max-width: 1192px;
+  padding: 0 20px;
+}
+
+/* latest news section */
+
+.latest-news {
+  color: #f42;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 700;
+  padding: 12px 10px;
+  cursor: pointer;
+}
+
+.fa-angle-right {
+  color: #f42;
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 25px;
+}
+
+.flex-row {
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  margin: auto;
+  width: 100%;
+}
+
+.flexnews-part {
+  position: relative;
+  flex-basis: 25%;
+  padding: 12px;
+  cursor: pointer;
+  min-width: 230px;
+  overflow: hidden;
+}
+
+.flexnews-part-img {
+  background-color: #131313;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 300px;
+  height: 15vw;
+  max-height: 135px;
+  overflow: hidden;
+}
+
+.flexnews-part h4 {
+  margin-top: 10px;
+  color: #000;
+  font-weight: bold;
+}
+
+.flexnews-part p {
+  color: #aaa;
+  margin-top: -10px;
+  font-size: 13px;
+}
+
+#news-img1 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/panda-480x270.jpg);
+}
+
+#news-img2 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/03/P30-4-of-5-515x270.jpg);
+}
+
+#news-img3 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Pocket-Casts-hed-513x270.jpg);
+}
+
+#news-img4 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Untitled-design105-516x270.png);
+}
+
+#news-img5 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Samsung-TV-540x270.jpeg);
+}
+
+#news-img6 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/gun-516x270.png);
+}
+
+#news-img7 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/craig-wright-bitcoin--516x270.jpg);
+}
+
+#news-img8 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-512x270.jpg);
+}
+
+#news-img9 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/iPhone-11-Pro-Tim-Cook-513x270.jpg);
+}
+
+#news-img10 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/iPhone-Pro-lineup-514x270.jpg);
+}
+
+#news-img11 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/iPhone-11-pricing-513x270.jpg);
+}
+
+#news-img12 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/iphone11-513x270.jpg);
+}
+
+/* deals section */
+
+.deals {
+  margin-top: 40px;
+  margin-bottom: 4em;
+}
+
+.indexco {
+  float: left;
+  text-decoration: none;
+  color: #f42;
+  font-size: 28px;
+  padding-left: 12px;
+}
+
+.deals-header-right {
+  float: right;
+  color: #f42;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 0 12px;
+}
+
+#middle-deals-right {
+  border-right: 1px solid #f42;
+  border-left: 1px solid #f42;
+}
+
+.flex-deals-part {
+  position: relative;
+  flex-basis: 25%;
+  max-width: 25%;
+  padding: 12px;
+  cursor: pointer;
+  min-width: 230px;
+  background: #fffaf8;
+}
+
+.flex-deals-part img {
+  width: 60px;
+  min-width: 60px;
+  max-width: 60px;
+  height: 60px;
+  min-height: 60px;
+  max-height: 60px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 1;
+}
+
+.deals-head-title {
+  background: #f42;
+  color: #fff;
+  padding: 10.66666667px 16px;
+  padding-left: 84px;
+  margin: 0 !important;
+  font-size: 18px !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.deals-head {
+  padding: 10.66666667px 16px;
+  padding-left: 84px;
+  color: #000;
+  background: rgba(255, 68, 34, 0.08);
+  margin: 0;
+}
+
+.deals-head h4 {
+  font-size: 18px;
+  color: #000;
+  margin: 0 !important;
+}
+
+.deals-head h5 {
+  opacity: 0.5;
+  margin: 0;
+}
+
+.flex-deals-text {
+  padding: 6px 16px;
+}
+
+.flex-deals-text p {
+  padding-left: 5px;
+  position: relative;
+  font-size: 13px;
+  color: #555;
+  margin-right: 1em;
+  line-height: 22px;
+}
+
+.fa-tag,
+.fa-briefcase {
+  color: #000;
+}
+
+.flex-deals-footer p {
+  padding: 6px 16px;
+  color: #555;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.most-popular p {
+  color: #fff9;
+  left: 2%;
+  font-size: 12px;
+}
+
+.flex-deals-text p:hover {
+  color: #000;
+}
+
+.flex-deals-footer {
+  border-top: 1px solid #ff442240;
+}
+
+.flex-deals-footer span {
+  color: #aaa;
+}
+
+/* apps section */
+
+.row3 {
+  position: relative;
+  flex-basis: 33.33%;
+  max-width: 33.33%;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.row3 h2 {
+  color: #f42;
+  font-size: 28px;
+}
+
+.row3-img {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 18vw;
+  min-height: 230px;
+  max-height: 275px;
+  background-color: black;
+  position: relative;
+}
+
+.row3-img-gradient {
+  background: transparent url(../img/image-gradient.png) no-repeat;
+  background-size: 100% 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+#row3-img1 {
+  background-image: url(../img/whatsapp-796x433.jpg);
+}
+
+#row3-img2 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/03/P30-4-of-5-368x276.jpg);
+}
+
+#row3-img3 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Ecuador-flag-hed-368x276.jpg);
+}
+
+#row3-img4 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/mixingboard-368x276.jpg);
+}
+
+#row3-img5 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Untitled-design105-368x276.png);
+}
+
+#row3-img6 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/panda-368x276.jpg);
+}
+
+#row3-img7 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Pam-Angela-The-Office-368x276.jpg);
+}
+
+#row3-img8 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/The-Offspring-World-of-Tanks-368x276.jpg);
+}
+
+.most-popular {
+  position: absolute;
+  bottom: 0;
+  padding-left: 2%;
+  padding-right: 5%;
+  color: #fff;
+  z-index: 2;
+}
+
+.most-popular h2 {
+  color: #fff;
+  font-size: 20px;
+  left: 2%;
+}
+
+.most-popular h5 {
+  color: #fff;
+  margin-bottom: -10px;
+  left: 2%;
+}
+
+.row3top {
+  position: relative;
+  background-color: #ff44220f;
+  margin-top: 0;
+  height: 96px;
+  color: #f42;
+  font-size: 14px;
+}
+
+.row3top h5 {
+  position: absolute;
+  padding-left: 2%;
+  bottom: 50px;
+}
+
+.row3top h4 {
+  position: absolute;
+  top: 20px;
+  padding-left: 2%;
+  padding-right: 30%;
+  font-size: 14px;
+}
+
+.row3top span {
+  background-color: #000;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 96px;
+  height: 96px;
+  float: right;
+}
+
+#row3top-span1 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Pocket-Casts-hed.jpg);
+}
+
+#row3top-span2 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Unagi-Model-One-Scooter-1-of-8.jpg);
+}
+
+#row3top-span3 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/gun.png);
+}
+
+#row3top-span4 {
+  background-image: url(https://i.ytimg.com/vi/Z1jgaEO9aRs/hqdefault.jpg);
+}
+
+#row3top-span5 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/download25.png);
+}
+
+#row3top-span6 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/craig-wright-bitcoin-.jpg);
+}
+
+#row3top-span7 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Orion-Doom-Bethesda-hed.jpg);
+}
+
+#row3top-span8 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/04/lootbox.jpg);
+}
+
+.latest-list {
+  position: relative;
+}
+
+.latest-list-part::before {
+  background-color: #f42;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  top: 7px;
+  width: 4px;
+}
+
+.latest-list-part {
+  padding: 0 15px 10px;
+  color: #555;
+  font-size: 13px;
+  line-height: 18px;
+  border-bottom: 1px solid #eee;
+}
+
+/* latest deals section */
+
+#deals-img1 {
+  background-image: url(../img/product_30218_product_shots4.jpg);
+  background-position: 0 100%;
+  max-height: 196px;
+  overflow: hidden;
+}
+
+#deals-img2 {
+  background-image: url(../img/sale_21605_primary_image.jpg);
+  background-position: 0 100%;
+  max-height: 196px;
+  overflow: hidden;
+}
+
+#deals-img3 {
+  background-image: url(../img/sale_21635_primary_image.jpg);
+  background-position: 0 100%;
+  max-height: 196px;
+  overflow: hidden;
+}
+
+#deals-img4 {
+  background-image: url(../img/sale_21811_primary_image.jpg);
+  background-position: 0 100%;
+  max-height: 196px;
+  overflow: hidden;
+}
+
+#deals-img5 {
+  background-image: url(../img/sale_21594_primary_image.jpg);
+  background-position: 0 100%;
+  max-height: 196px;
+  overflow: hidden;
+}
+
+#deals-img6 {
+  background-image: url(../img/sale_15929_primary_image.jpg);
+  background-position: 0 100%;
+  max-height: 196px;
+  overflow: hidden;
+}
+
+#deals-img7 {
+  background-image: url(../img/sale_15499_primary_image.jpg);
+  background-position: 0 100%;
+  max-height: 196px;
+  overflow: hidden;
+}
+
+#deals-img8 {
+  background-image: url(../img/sale_20542_primary_image.jpg);
+  background-position: 0 100%;
+  max-height: 196px;
+  overflow: hidden;
+}
+
+.off {
+  background-image: url(../img/deals-ribbon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #000;
+  display: block;
+  height: 80px;
+  width: 80px;
+  overflow: hidden;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  z-index: 1;
+}
+
+.off div {
+  transform: rotate(45deg);
+  font-size: 14px;
+  font-weight: 700;
+  left: 7px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 20px;
+  width: 100%;
+}
+
+.deals-span {
+  text-decoration: line-through;
+}
+
+/* footer section  */
+.social {
+  background-color: #131313;
+  padding: 30px;
+  height: 160px;
+  margin-bottom: -13px;
+  padding-bottom: 0;
+}
+
+.iwraper {
+  width: 100%;
+  text-align: center;
+}
+
+.social i {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  margin: 0 0.3%;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  border: 1px solid #333;
+}
+
+#wifi,
+#envelope {
+  padding-left: 13px;
+}
+
+.social i:hover {
+  background-color: #131313;
+}
+
+.footer-nav {
+  padding-top: 30px;
+  color: #aaa;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-nav span {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.footer-nav span:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  width: 100%;
+  height: 97px;
+  background-color: #000;
+  color: #aaa;
+  font-size: 13px;
+  margin: 0;
+  padding: 40px;
+  text-align: center;
+}
+
+.footer-bottom span img {
+  display: inline-block;
+  height: 9px;
+  margin-right: 1px;
+  vertical-align: baseline;
+}
+
+b {
+  color: red;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1024px) {
+  #logoid {
+    display: block;
+    height: 79px;
+  }
+
+  .news-bar,
+  .latest-bar {
+    padding-left: 120px;
+  }
+
+  .dropout {
+    display: none;
+  }
+
+  .yellow-bar {
+    padding-left: 120px;
+  }
+
+  .headlines {
+    height: 50vh;
+  }
+
+  .cover-logo,
+  .cover-date {
+    display: none;
+  }
+
+  .main-header h2 {
+    font-size: 39px;
+  }
+
+  .small-header h2 {
+    font-size: 20px;
+  }
+
+  .flexnews-part {
+    flex-basis: 33.33%;
+  }
+
+  .flex-deals-part {
+    flex-basis: 33.33%;
+  }
+
+  .row3 {
+    min-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .news-bar,
+  .latest-bar {
+    display: none;
+  }
+
+  #logoid {
+    display: block;
+    height: 48px;
+  }
+
+  .logo img {
+    padding-top: 16px;
+  }
+
+  .yellow-bar {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .headlines {
+    height: 100vh;
+    grid-template-areas: "art1" "art2" "art3";
+  }
+
+  .main-header h2 {
+    font-size: 20px;
+  }
+
+  .cover-gradient {
+    display: none;
+  }
+
+  .small-headline {
+    filter: opacity(100%);
+  }
+
+  .flexnews-part {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .flex-deals-part {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .flexnews-part-img {
+    float: left;
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .deals-header-right {
+    float: left;
+    clear: both;
+  }
+
+  #middle-deals-right {
+    border: none;
+  }
+
+  .advert {
+    display: none;
+  }
+
+  .row3 {
+    flex-basis: 100%;
+    min-width: 100%;
+  }
+
+  .off {
+    display: none;
+  }
+
+  .fa-bars {
+    display: flex;
+    color: #f42;
+    font-size: 23px;
+    margin: 14px 5px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .yellow-bar {
+    font-size: 11px;
+  }
+}
