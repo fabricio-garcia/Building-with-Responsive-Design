@@ -1,5 +1,6 @@
 # Project: Building with Responsive Design
 
+![TheNextWeb](img/Screenshot_20200405_190949.png)
 
 ## [Collaborative Project]
 
@@ -24,6 +25,14 @@ You can find the original project specification [here](https://www.theodinprojec
 - Align all elements with [float](https://css-tricks.com/all-about-floats/) OR [flex](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) AND your own Grid as described in [previous lesson](https://www.theodinproject.com/courses/html5-and-css3/lessons/css-grids) .
 - `[HINT]` This page should contain 3 breakpoints (you should figure out the exact width for each breakpoint by yourself).
 - Remember to double-check if you page layout does not brake on smaller screens.
+
+# Usage
+
+Donwload or clone this repo and open the index.html file
+
+# Automated tests
+
+No automated tests for this project have been implmented but 
 
 ## Repositories
 
